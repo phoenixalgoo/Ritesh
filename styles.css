@@ -1,4 +1,125 @@
-:root {
-    --primary-color: #ff5722;
-    --background-color: rgba(0, 0, 0, 0.7);
-    --text-color
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.bg-image {
+    background-image: url('https://pin.it/5w2brVgjw');
+    height: 100vh;
+    background-size: cover;
+    filter: blur(8px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.info-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.team-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 10px;
+}
+
+.team-member img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.course-details {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid gold;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.learn-more {
+    background-color: gold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    background-color: #ffd700;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+``` ```html
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java + DSA Course - PhoenixAlgo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>PhoenixAlgo</h1>
+        <h2>FROM SYNTAX TO SUCCESS</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="java.html">Java Course</a>
+        <a href="dsa.html">DSA Course</a>
+        <a href="java_dsa.html">Java + DSA Course</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="bg-image"></div>
+
+    <section class="course-details">
+        <h2>Java + DSA Course</h2>
+        <div class="course-info">
+            <p>✅ Price: ₹XX99/- (Save More!)</p>
+            <p>📅 Duration: 3-4 Months</p>
+            <p>📍 Mode: Online + Weekly Offline Sessions</p>
+            <button class="learn-more" onclick="alert('Full details of the Java + DSA Course...')">Learn More</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 PhoenixAlgo. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
